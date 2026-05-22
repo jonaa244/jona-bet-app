@@ -2,7 +2,7 @@ self.addEventListener("install", e => {
   e.waitUntil(
     caches.open("bettracker-cache").then(cache => {
       return cache.addAll([
-        "bettracker_ultimate.html"
+        "/index.html",
       ]);
     })
   );
